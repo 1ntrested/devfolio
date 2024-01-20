@@ -1,0 +1,35 @@
+.content-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.T{
+    margin-top: 5rem;
+    font-size: 2.625rem;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: capitalize;
+    line-height: 52px;
+}
+.D{
+    font-size:1.3rem;
+    font-family:source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    letter-spacing: -0.003em;
+    line-height: 32px;
+    color: #6B6B6B;
+}
+
+.img-id{
+    max-width: 500px;
+    max-height: 500px;
+}
+@media (min-width:200px) and (max-width:1200px){
+    .img-id{
+        max-width: 400px;
+        max-height: 500px;
+    }
+}

@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.custom-card {
+  display: flex;
+  flex-direction: column;  
+  max-width: 951px;
+  margin:0 auto;
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace; 
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem 0.5rem !important; 
+}
+
+.card-heading {
+  color: rgb(0, 255, 164);
+
+}
+
+.card-content {
+  color: white;
+}
+.heading2{
+  color:white;
+}
+@media(max-width:600px){
+  .custom-card{
+      width: 90vw;
+      margin: 0 auto;
+      max-width: none;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      
+  }
+}
+@media (min-width:900px){
+  .custom-card{
+      flex-direction: column;
+  }
+}
+
+.Terminal-nav{
+  display: flex;
+  align-items: flex-start;
+  padding: 0.5rem;
+  border-radius: 0.5rem 0.5rem 0px 0px;
+  font-size: 1rem;
+  background-color: rgb(140, 140, 140);
+  max-width: inherit;
+  height: 30px;
+}
+
+
+.fa-circle {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  font-size: small;
+}
+.Terminal-red {
+color: #ff6057;
+}
+
+.Terminal-amber {
+color: #ffd24d;
+}
+
+.Terminal-green {
+color: #5cff57;
+}
+
+
+
+
+
