@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const app = express();
 const jwt = require("jsonwebtoken");
+// import "../client/blog/src/index.css";
+
 const bcrypt = require("bcryptjs");
 const cookieParser = require("cookie-parser");
 var cors = require("cors");
