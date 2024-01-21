@@ -1,26 +1,19 @@
+import React from 'react';
 import Signup  from './components/Signup'
 import Navbar from './components/Navbar'
 import Login from './components/Login';
-//import ReactDOM from "react-dom/client";
+import Experience from "./components/Experience/Experience.jsx";
 import Posts from './components/Create';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Showpost from './components/Showpost';
-import Getimages from './components/Getimages';
 import Newpage from './components/Newpage';
-//import BlogEditor from './components/CreatePost'
+
 import { createContext } from "react";
 export const ThemeContext=createContext(null);
-import { useState } from 'react';
-import PostBody from './components/Terminal/postBody';
-function App() {
-  const [theme,setTheme]=useState("dark");
 
-  const toggleTheme=()=>{
-    setTheme((curr)=>curr==="dark"?"light":"dark")
-  }
+function App() {
   return (
-    <ThemeContext.Provider value={{theme,toggleTheme}}>
-   <div className="App" id={theme}>
+   <div className="App">
    <BrowserRouter>
      <Navbar />
      
@@ -31,13 +24,11 @@ function App() {
         <Route path='/createpost' element={<Posts />} />
         <Route path='/showpost' element={<Showpost />} />
         <Route path='/newpage' element={<Newpage />} /> 
-        <Route path='/new' element={<PostBody />} /> 
-        {/* <Route path='/createagain' element={<BlogEditor />} /> */}
+        <Route path="/experience" element={<Experience />} />     
         <Route path='*' element={<h1>PAGE NOT FOUND</h1>} />
       </Routes>
     </BrowserRouter>
     </div>
-    </ThemeContext.Provider>
   )
 }
 

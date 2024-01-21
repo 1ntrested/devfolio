@@ -1,11 +1,8 @@
-
+import React from 'react'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import "./Terminal.css";
-import React, { useState } from 'react';
 function Terminal(props) {  
-  const [textToCopy, setTextToCopy] = useState(''); // The text you want to copy
-  const [copyStatus, setCopyStatus] = useState(false); // To indicate if the text was copied
   const formatMainContent=(content)=>{
     if(props.formatNewline){
       const contentArray=content.split('\n');
@@ -34,6 +31,7 @@ function Terminal(props) {
           <p className="card-heading">
             {props.heading} <span className='heading2'>{props.heading2}</span>
           </p>
+          
           <p className="card-content" >
            <span style={{color:'rgb(0, 255, 164)'}}>{props.content}</span>
             <span style={{color:'#27c93f'}}>{props.content1}</span> <span style={{color:'rgb(0, 255, 164)'}}>{props.content2}</span> 

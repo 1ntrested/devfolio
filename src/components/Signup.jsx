@@ -1,6 +1,6 @@
 import TextField from '@mui/material/TextField';
 import Card from '@mui/material/Card';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+//import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
